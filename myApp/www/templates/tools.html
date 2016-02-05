@@ -1,0 +1,26 @@
+<ion-view view-title="tools">
+    <ion-content style="padding: 0 15px">
+        <ion-list>
+            <ion-toggle  ng-model="toolsOp">
+                Enable Tools
+            </ion-toggle>
+            <br>
+            <div  ng-show="toolsOp">
+                <button class="button button-outline button-block button-positive">
+                    Tool 1
+                </button>
+                <button class="button button-outline button-block button-assertive">
+                    Tool 2
+                </button>
+                <button class="button button-outline button-block button-calm">
+                    Tool 3
+                </button>
+            </div>
+
+        </ion-list>
+        <ion-content ng-controller="MapController">
+            <div id="map" data-tap-disabled="true"></div>
+        </ion-content>
+    </ion-content>
+</ion-view>
+
